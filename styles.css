@@ -1,0 +1,85 @@
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+img {
+  width: 200px;
+}
+
+h1, h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  color: #009dff;
+}
+button:hover {
+  text-decoration: underline;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+body main {
+  /*max-width: 50%;*/
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+body main header {
+  display: flex;
+}
+body main header div:nth-child(2) {
+  width: auto;
+}
+body main section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+body main section header {
+  background: #f9d9ab;
+  border-bottom: 5px solid #f3cc5f;
+}
+body main section header h2 {
+  flex: 1;
+  padding: 4px 0;
+  margin: 0;
+  text-align: center;
+}
+body main section article {
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+body main section article p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
