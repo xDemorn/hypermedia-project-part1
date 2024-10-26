@@ -1,0 +1,94 @@
+{
+  "lang": {
+    "en": "English",
+    "es": "Spanish",
+    "ca": "Catalan",
+    "pl": "Polish"
+  },
+  "marca": {
+    "title": "personal brand",
+    "p1": "I like to finish the projects I start; I learn concepts quickly, and there is no challenge I cannot overcome.",
+    "p2": "I am a proactive, flexible person with self-motivation and a desire for new learning experiences.",
+    "p3": "I would like to work in web page programming, mobile applications, and/or video games. Interested in turning ideas into reality, learning more languages, and creating a video game in the future."
+  },
+  "formacio": {
+    "title": "academic training",
+    "item1": {
+      "name": "Bachelor’s in Video Game Design and Development",
+      "location": "University of Girona"
+    },
+    "item2": {
+      "name": "Mobile Application Programming Training Course",
+      "location": "Esplai Foundation"
+    },
+    "item3": {
+      "name": "Higher Vocational Training - Multiplatform Application Development"
+    },
+    "item4": {
+      "name": "Higher Vocational Training - Web Application Development"
+    },
+    "item5": {
+      "name": "Higher Vocational Training - Networked Computer Systems Administration"
+    },
+    "item6": {
+      "name": "Intermediate Vocational Training - Microcomputer Systems and Networks"
+    }
+  },
+  "experiencia": {
+    "title": "work experience",
+    "item1": {
+      "name": "FullStack Programmer",
+      "desc": "Programming and modification of web pages, mainly using technologies such as Angular, React, and Experience Builder."
+    },
+    "item2": {
+      "name": "Web / Multiplatform Programmer",
+      "desc1": "Programming and modification of web pages using technologies like Angular + NodeJS.",
+      "desc2": "Creation of mobile applications with React Native + NodeJS.",
+      "desc3": "Creation of desktop applications with Java + JavaFX (internship)."
+    },
+    "item3": {
+      "name": "IT Maintenance",
+      "desc": "Maintenance of computer equipment, checking system and application updates (internship)."
+    },
+    "other": {
+      "title": "Other experiences: ",
+      "desc": "paint operator, team of 5 young people (4 summers), City Council of Les Planes d’Hostoles."
+    }
+  },
+  "coneixements": {
+    "title": "technical skills",
+    "title1": "Web pages",
+    "title2": "Desktop applications",
+    "title3": "Mobile applications",
+    "title4": "Databases",
+    "title5": "Version control",
+    "title6": "Documentation and others"
+  },
+  "languages": {
+    "title": "Languages",
+    "level_high": "high level",
+    "level_mid": "intermediate level",
+    "level_native": "high level (native)"
+  },
+  "altres": {
+    "title": "Other",
+    "li1": "Availability for immediate start, flexible hours",
+    "li2": "Permits A2, A1, B + own vehicle."
+  },
+  "projects": {
+    "title": "projects",
+    "project1": {
+      "title": "RestaSearch",
+      "p1": "A mobile and tablet application (Android) that, using the current geolocation position and a specified radius, shows the various restaurants in the area.",
+      "subtitle": "Features",
+      "li1": "Map with different restaurants",
+      "li2": "Save a restaurant as a favorite",
+      "li3": "History of clicked restaurants",
+      "li4": "Multilingual (English, Spanish, Catalan)"
+    },
+    "project2": {
+      "title": "Hypermedia Project",
+      "p1": "Web application from the second year of GDDV (Game Design and Development)"
+    }
+  }
+}

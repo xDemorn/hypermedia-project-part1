@@ -1,0 +1,94 @@
+{
+  "lang": {
+    "en": "Inglés",
+    "es": "Español",
+    "ca": "Catalán",
+    "pl": "Polaco"
+  },
+  "marca": {
+    "title": "marca personal",
+    "p1": "Me gusta finalizar los proyectos que comienzo, aprendo rápido los conceptos y no hay reto que no supere.",
+    "p2": "Soy una persona proactiva, flexible, con automotivación y con ganas de nuevos aprendizajes.",
+    "p3": "Me gustaría dedicarme a la programación de páginas web, aplicaciones móviles y/o videojuegos. Interesado en convertir ideas en realidad, aprender más lenguajes y crear un videojuego en el futuro."
+  },
+  "formacio": {
+    "title": "formación académica",
+    "item1": {
+      "name": "Grado en Diseño y Desarrollo de Videojuegos",
+      "location": "Universidad de Girona"
+    },
+    "item2": {
+      "name": "Curso de Formación en Programación de aplicaciones móviles",
+      "location": "Fundación Esplai"
+    },
+    "item3": {
+      "name": "CFGS - Desarrollo de aplicaciones multiplataforma"
+    },
+    "item4": {
+      "name": "CFGS - Desarrollo de aplicaciones web"
+    },
+    "item5": {
+      "name": "CFGS - Administración de sistemas informáticos en red"
+    },
+    "item6": {
+      "name": "CFGM - Sistemas Microinformáticos y Redes"
+    }
+  },
+  "experiencia": {
+    "title": "experiencia laboral",
+    "item1": {
+      "name": "Programador FullStack",
+      "desc": "Programación y modificación de páginas web, principalmente con tecnologías como Angular, React y Experience Builder."
+    },
+    "item2": {
+      "name": "Programador web / multiplataforma",
+      "desc1": "Programación y modificación de páginas web, con tecnologías como Angular + NodeJS.",
+      "desc2": "Creación de aplicaciones móviles con React Native + NodeJS.",
+      "desc3": "Creación de aplicaciones de escritorio con Java + JavaFX (prácticas)."
+    },
+    "item3": {
+      "name": "Mantenimiento Informático",
+      "desc": "Mantenimiento de equipos informáticos, comprobación de actualizaciones del sistema y aplicaciones (prácticas)."
+    },
+    "other": {
+      "title": "Otras experiencias: ",
+      "desc": "Operario de pintura, equipo de 5 jóvenes (4 veranos), Ay. de Les Planes d’Hostoles."
+    }
+  },
+  "coneixements": {
+    "title": "conocimientos tecnológicos",
+    "title1": "Páginas web",
+    "title2": "Aplicaciones de escritorio",
+    "title3": "Aplicaciones móviles",
+    "title4": "Bases de datos",
+    "title5": "Control de versiones",
+    "title6": "Documentación y otros"
+  },
+  "languages": {
+    "title": "Idiomas",
+    "level_high": "nivel alto",
+    "level_mid": "nivel medio",
+    "level_native": "nivel alto (nativo)"
+  },
+  "altres": {
+    "title": "Otros",
+    "li1": "Disponibilidad de incorporación inmediata, flexibilidad horaria",
+    "li2": "Permisos A2, A1, B + vehículo propio."
+  },
+  "projects": {
+    "title": "proyectos",
+    "project1": {
+      "title": "RestaSearch",
+      "p1": "Una aplicación para móviles y tablets (Android) que, tomando la posición actual de geolocalización y especificando un radio, muestra los diferentes restaurantes de la zona.",
+      "subtitle": "Funcionalidades",
+      "li1": "Mapa con los diferentes restaurantes",
+      "li2": "Guardar un restaurante como favorito",
+      "li3": "Historial de restaurantes clicados",
+      "li4": "Multi idioma (Inglés, Español, Catalán)"
+    },
+    "project2": {
+      "title": "Proyecto de Hipermedia",
+      "p1": "Aplicación web del segundo curso de GDDV (Diseño y Desarrollo de Videojuegos)"
+    }
+  }
+}

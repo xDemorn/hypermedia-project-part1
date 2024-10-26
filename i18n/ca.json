@@ -1,0 +1,94 @@
+{
+  "lang": {
+    "en": "Anglès",
+    "es": "Castellà",
+    "ca": "Català",
+    "pl": "Polonès"
+  },
+  "marca": {
+    "title": "marca personal",
+    "p1": "M’agrada finalitzar els projectes que començo, sóc de les persones que aprenen ràpid els conceptes i no hi ha cap repte que no superi.",
+    "p2": "Soc una persona proactiva, flexible amb automotivació i ganes de nous aprenentatges.",
+    "p3": "M’agradaria dedicar-me a la programació de pàgines web, aplicacions mòbils i/o videojocs. Interessat en convertir les idees en realitat, aprendre més llenguatges, crear un videojoc en un futur."
+  },
+  "formacio": {
+    "title": "formació acadèmica",
+    "item1": {
+      "name": "Grau en Disseny i Desenvolupament de Videojocs",
+      "location": "Universitat de Girona"
+    },
+    "item2": {
+      "name": "Curs de Formació de Programació d'aplicacions mòbils",
+      "location": "Fundació Esplai"
+    },
+    "item3": {
+      "name": "CFGS - Desenvolupament d'aplicacions multiplataforma"
+    },
+    "item4": {
+      "name": "CFGS - Desenvolupament d'aplicacions web"
+    },
+    "item5": {
+      "name": "CFGS - Administració de sistemes informàtics en xarxa"
+    },
+    "item6": {
+      "name": "CFGM - Sistemes Microinformàtics i Xarxes"
+    }
+  },
+  "experiencia": {
+    "title": "experiència laboral",
+    "item1": {
+      "name": "Programador FullStack",
+      "desc": "Programació i modificació de pàgines web, principalment amb tecnologies com Angular, React i Experience Builder."
+    },
+    "item2": {
+      "name": "Programador web / multiplataforma",
+      "desc1": "Programació i modificació de pàgines web, amb tecnologies com Angular + NodeJS.",
+      "desc2": "Creació d'aplicacions mòbils amb React Native + NodeJS.",
+      "desc3": "Creació d'aplicacions d'escriptori amb Java + JavaFX (pràctiques)."
+    },
+    "item3": {
+      "name": "Manteniment Informàtic",
+      "desc": "Manteniment d'equips informàtics, comprovació d'actualitzacions del sistema i aplicacions (pràctiques)."
+    },
+    "other": {
+      "title": "Altres experiències: ",
+      "desc": "operari de pintura, equip de 5 joves (4 estius), Aj. de Les Planes d’Hostoles."
+    }
+  },
+  "coneixements": {
+    "title": "coneixements tecnològics",
+    "title1": "Pàgines web",
+    "title2": "Aplicacions d'escriptori",
+    "title3": "Aplicacions mòbils",
+    "title4": "Bases de dades",
+    "title5": "Control de versions",
+    "title6": "Documentació i altres"
+  },
+  "languages": {
+    "title": "idiomes",
+    "level_high": "nivell alt",
+    "level_mid": "nivell mig",
+    "level_native": "nivell alt (natiu)"
+  },
+  "altres": {
+    "title": "altres",
+    "li1": "Disponibilitat d’incorporació immediata, flexibilitat d’horari",
+    "li2": "Permisos A2, A1, B + vehicle propi."
+  },
+  "projects": {
+    "title": "projectes",
+    "project1": {
+      "title": "RestaSearch",
+      "p1": "Una aplicació per mòbils i tablets (Android) que agafant la posició actual de la geolocalització i especificant un radi mostra els diferents restaurants de la zona.",
+      "subtitle": "Funcionalitats",
+      "li1": "Mapa amb els diferents restaurants",
+      "li2": "Guardar un restaurant com a preferit",
+      "li3": "Historial dels restaurants clicats",
+      "li4": "Multi idioma (Anglès, Castellà, Català)"
+    },
+    "project2": {
+      "title": "Projecte d'Hipermèdia",
+      "p1": "Aplicació web del segon curs de GDDV (Disseny i Desenvolupament de Videojocs)"
+    }
+  }
+}

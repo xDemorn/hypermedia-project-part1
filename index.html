@@ -6,118 +6,315 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Hypermedia Project</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="main.js"></script>
+        <script src="main.js" type="text/javascript"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <main class="w-50">
+    <body onload="OnInit()">
+        <aside class="language-selector">
+            <ul>
+                <li id="en" i18n="lang.en" tooltip onclick="changeLanguage('en')">
+                    <img src="images/flag_en.jpg" alt="US Flag">
+                </li>
+                <li id="es" i18n="lang.es" tooltip onclick="changeLanguage('es')">
+                    <img src="images/flag_es.jpg" alt="ES Flag">
+                </li>
+                <li id="ca" i18n="lang.ca" tooltip onclick="changeLanguage('ca')">
+                    <img src="images/flag_ca.jpg" alt="CA Flag">
+                </li>
+                <li id="pl" i18n="lang.pl" tooltip onclick="changeLanguage('pl')">
+                    <img src="images/flag_pl.jpg" alt="PL Flag">
+                </li>
+            </ul>
+        </aside>
+
+        <main class="page" id="page-1">
             <header>
                 <div class="col">
                     <h1>mikolaj jaworski</h1>
                     <p>17172 - Les Planes d'Hostoles, Girona</p>
-                    <button>jaworski.miki98@gmail.com</button>
+                    <button id="email" onclick="open('mailto:jaworski.miki98@gmail.com', '')">jaworski.miki98@gmail.com</button>
                     <p>15/11/1998</p>
                     <span>
-                    <button>GitHub</button>
-                    -
-                    <button>LinkedIn</button>
-                </span>
+                        <button id="github">GitHub</button>
+                        -
+                        <button id="linkedin">LinkedIn</button>
+                    </span>
                 </div>
                 <div class="col">
-                    <img src="https://imgs.search.brave.com/xFkz2rHVRFxHB3pOHKPh-9VUyP9DKszbVpTUzIP9HvM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1wcm9m/aWxlLXBpY3R1cmUt/ODdoNDZnY29iamw1/ZTR4dS5qcGc" alt="Profile Picture" />
+                    <img class="profile-img" src="https://imgs.search.brave.com/xFkz2rHVRFxHB3pOHKPh-9VUyP9DKszbVpTUzIP9HvM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1wcm9m/aWxlLXBpY3R1cmUt/ODdoNDZnY29iamw1/ZTR4dS5qcGc" alt="Profile Picture" />
                 </div>
             </header>
 
             <section class="marca-personal">
                 <header>
-                    <h2>marca personal</h2>
+                    <h2 i18n="marca.title"></h2>
                 </header>
                 <article>
-                    <p>M’agrada finalitzar els projectes que començo, sóc de les persones que aprenen ràpid els conceptes i no hi ha cap repte que no superi.</p>
-                    <p>Sóc una persona proactiva, flexible amb automotivació i ganes de nous aprenentatges.</p>
-                    <p>M’agradaria treballar com a <b>programador de pàgines web</b>, <b>d’aplicacions mòbils</b> i/o <b>videojocs</b>. Interessat en convertir les idees en realitat, aprendre més llenguatges, crear un videojoc en un futur.
-                    </p>
+                    <p i18n="marca.p1">p1</p>
+                    <p i18n="marca.p2">p2</p>
+                    <p i18n="marca.p3">p3</p>
                 </article>
             </section>
 
             <div class="row">
                 <section class="formacio-academica">
                     <header>
-                        <h2>formacio acadèmica</h2>
+                        <h2 i18n="formacio.title"></h2>
                     </header>
                     <article>
-                        <ul>
-                            <li>(2023 - actualitat) Grau en Disseny i Desenvolupament de Videojocs, Universitat de Girona</li>
-                            <li>(2021, 270h) Curs de Formació de Programació d’aplicacions mòbils, Fundación Esplai.</li>
-                            <li>(2019 - 2020) CFGS - Desenvolupament d’aplicacions multiplataforma, INS Bosc de la Coma.</li>
-                            <li>(2018 - 2019) CFGS - Desenvolupament d’aplicacions web, INS Bosc de la Coma.</li>
-                            <li>(2017 - 2018) CFGS - Administració de sistemes informàtics en xarxa, INS Bosc de la Coma.</li>
-                            <li>(2015 - 2017) CFGM - Sistemes Microinformàtics i Xarxes, INS Bosc de la Coma.</li>
-                        </ul>
+                        <div class="formacio">
+                            <p class="name">
+                                <b i18n="formacio.item1.name"></b>
+                            </p>
+                            <p i18n="formacio.item1.location" class="location"></p>
+                            <p class="date">
+                                <i>2023</i>
+                            </p>
+                        </div>
+
+                        <div class="formacio">
+                            <p class="name">
+                                <b i18n="formacio.item2.name"></b>
+                            </p>
+                            <p i18n="formacio.item2.name" class="location"></p>
+                            <p class="date">
+                                <i>2021, 270h</i>
+                            </p>
+                        </div>
+
+                        <div class="formacio">
+                            <p class="name">
+                                <b i18n="formacio.item3.name"></b>
+                            </p>
+                            <p i18n="formacio.item3.name" class="location"></p>
+                            <p class="date">
+                                <i>2019 - 2020</i>
+                            </p>
+                        </div>
+
+                        <div class="formacio">
+                            <p class="name">
+                                <b i18n="formacio.item4.name"></b>
+                            </p>
+                            <p class="location">INS Bosc de la Coma</p>
+                            <p class="date">
+                                <i>2018 - 2019</i>
+                            </p>
+                        </div>
+
+                        <div class="formacio">
+                            <p class="name">
+                                <b i18n="formacio.item5.name"></b>
+                            </p>
+                            <p class="location">INS Bosc de la Coma</p>
+                            <p class="date">
+                                <i>2017 - 2018</i>
+                            </p>
+                        </div>
+
+                        <div class="formacio">
+                            <p class="name">
+                                <b i18n="formacio.item6.name"></b>
+                            </p>
+                            <p class="location">INS Bosc de la Coma</p>
+                            <p class="date">
+                                <i>2015 - 2017</i>
+                            </p>
+                        </div>
                     </article>
                 </section>
 
                 <section class="experiencia-laboral">
                     <header>
-                        <h2>experiència laboral</h2>
+                        <h2 i18n="experiencia.title"></h2>
                     </header>
                     <article>
-                        <ul>
-                            <li>(2021 - actualitat) Programador FullStack a Nexus Geographics, Programació i modificació de pàgines web, principalment amb tecnologies com Angular, React i Experience Builder.</li>
-                            <li>(2018 - 2020) Programador web / multiplataforma a Ferran Masó, Programació de pàgines web des de zero, modificació d’arxius existents amb Angular + NodeJS. Creació d’aplicacions mòbils amb React Native + NodeJS. Creació d’aplicacions d’escriptori amb Java + JavaFX (pràctiques).</li>
-                            <li>(2016 - 2017) Manteniment Informàtic a CEIP Sant Cristòfol, Manteniment d’equips informàtics, comprovació d’actualitzacions del sistema i aplicacions (pràctiques).</li>
-                        </ul>
+                        <div class="experiencia">
+                            <p class="name">
+                                <b i18n="experiencia.item1.name"></b>
+                            </p>
+                            <p class="location">Nexus Geographics</p>
+                            <p class="date">
+                                <i>2021</i>
+                            </p>
+                            <p i18n="experiencia.item1.desc" class="desc"></p>
+                        </div>
+
+                        <div class="experiencia">
+                            <p class="name">
+                                <b i18n="experiencia.item2.name"></b>
+                            </p>
+                            <p class="location">Ferran Masó</p>
+                            <p class="date">
+                                <i>2018 - 2020</i>
+                            </p>
+                            <p i18n="experiencia.item2.desc1" class="desc"></p>
+                            <p i18n="experiencia.item2.desc2" class="desc"></p>
+                            <p i18n="experiencia.item2.desc3" class="desc"></p>
+                        </div>
+
+                        <div class="experiencia">
+                            <p class="name">
+                                <b i18n="experiencia.item3.name"></b>
+                            </p>
+                            <p class="location">CEIP Sant Cristòfol</p>
+                            <p class="date">
+                                <i>2016 - 2017</i>
+                            </p>
+                            <p i18n="experiencia.item3.desc" class="desc"></p>
+                        </div>
                     </article>
                 </section>
             </div>
 
+            <p>
+                <u i18n="experiencia.other.title"></u>
+                <span i18n="experiencia.other.desc"></span>
+            </p>
+        </main>
+
+        <main class="page" id="page-2">
             <section class="coneixements-tecnologics">
                 <header>
-                    <h2>coneixements tecnològics</h2>
+                    <h2 i18n="coneixements.title"></h2>
                 </header>
+
                 <article>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
+                    <div class="card">
+                        <div class="header">
+                            <span class="title">
+                                <b i18n="coneixements.title1"></b>
+                            </span>
+                        </div>
+                        <div class="content chips">
+                            <span class="chip">HTML5</span>
+                            <span class="chip">CSS</span>
+                            <span class="chip">JavaScript / TypeScript</span>
+                            <span class="chip">DOM</span>
+                            <span class="chip">JSON</span>
+                            <span class="chip">NodeJS</span>
+                            <span class="chip">Angular</span>
+                            <span class="chip">REST API</span>
+                            <span class="chip">React</span>
+                            <span class="chip">ArcGIS Experience Builder</span>
+                            <span class="chip">Nest.js</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card">
+                            <div class="header">
+                            <span class="title">
+                                <b i18n="coneixements.title2"></b>
+                            </span>
+                            </div>
+                            <div class="content chips">
+                                <span class="chip">C#</span>
+                                <span class="chip">Java</span>
+                                <span class="chip">JavaFX</span>
+                                <span class="chip">C++</span>
+                                <span class="chip">Unity</span>
+                                <span class="chip">Unreal Engine</span>
+                                <span class="chip">Godot</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="header">
+                            <span class="title">
+                                <b i18n="coneixements.title3"></b>
+                            </span>
+                            </div>
+                            <div class="content chips">
+                                <span class="chip">React Native</span>
+                                <span class="chip">Android Studio</span>
+                                <span class="chip">Unity</span>
+                                <span class="chip">Unreal Engine</span>
+                                <span class="chip">Godot</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card">
+                            <div class="header">
+                            <span class="title">
+                                <b i18n="coneixements.title4"></b>
+                            </span>
+                            </div>
+                            <div class="content chips">
+                                <span class="chip">MySQL</span>
+                                <span class="chip">SQL</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="header">
+                            <span class="title">
+                                <b i18n="coneixements.title5"></b>
+                            </span>
+                            </div>
+                            <div class="content chips">
+                                <span class="chip">Git</span>
+                                <span class="chip">GitHub</span>
+                                <span class="chip">BitBucket</span>
+                                <span class="chip">GitLab</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="header">
+                            <span class="title">
+                                <b i18n="coneixements.title6"></b>
+                            </span>
+                        </div>
+                        <div class="content chips">
+                            <span class="chip">Word</span>
+                            <span class="chip">Excel</span>
+                            <span class="chip">Photoshop</span>
+                            <span class="chip">SCRUM</span>
+                            <span class="chip">Trello</span>
+                        </div>
+                    </div>
                 </article>
             </section>
 
             <div class="row">
                 <section class="idiomes">
                     <header>
-                        <h2>idiomes</h2>
+                        <h2 i18n="languages.title"></h2>
                     </header>
                     <article>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                            <li>6</li>
-                        </ul>
+                        <div class="lang">
+                            <b i18n="lang.ca"></b>
+                            <p i18n="languages.level_high"></p>
+                        </div>
+                        <div class="lang">
+                            <b i18n="lang.es"></b>
+                            <p i18n="languages.level_high"></p>
+                        </div>
+                        <div class="lang">
+                            <b i18n="lang.en"></b>
+                            <p i18n="languages.level_mid"></p>
+                        </div>
+                        <div class="lang">
+                            <b i18n="lang.pl"></b>
+                            <p i18n="languages.level_native"></p>
+                        </div>
                     </article>
                 </section>
 
-                <section class="altres-dades">
+                <section class="altres-dades center">
                     <header>
-                        <h2>altres dades</h2>
+                        <h2 i18n="altres.title"></h2>
                     </header>
                     <article>
                         <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                            <li>6</li>
+                            <li i18n="altres.li1"></li>
+                            <li i18n="altres.li2"></li>
                         </ul>
                     </article>
                 </section>
@@ -125,17 +322,39 @@
 
             <section class="projectes">
                 <header>
-                    <h2>projectes</h2>
+                    <h2 i18n="projects.title"></h2>
                 </header>
-                <article>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
+                <article class="grid">
+                    <div class="project">
+                        <div class="header">
+                            <span class="title" i18n="projects.project1.title"></span>
+                            <span class="year">
+                                    <i>2021</i>
+                                </span>
+                        </div>
+                        <div class="content">
+                            <p i18n="projects.project1.p1"></p>
+                            <p class="subtitle" i18n="projects.project1.subtitle"></p>
+                            <ul style="list-style-type: disc;">
+                                <li i18n="projects.project1.li1"></li>
+                                <li i18n="projects.project1.li2"></li>
+                                <li i18n="projects.project1.li3"></li>
+                                <li i18n="projects.project1.li4"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="header">
+                            <span class="title" i18n="projects.project2.title"></span>
+                            <span class="year">
+                                    <i>2024</i>
+                                </span>
+                        </div>
+                        <div class="content">
+                            <p i18n="projects.project2.p1"></p>
+                        </div>
+                    </div>
                 </article>
             </section>
         </main>

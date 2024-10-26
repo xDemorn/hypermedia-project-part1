@@ -1,0 +1,94 @@
+{
+  "lang": {
+    "en": "Angielski",
+    "es": "Hiszpański",
+    "ca": "Kataloński",
+    "pl": "Polski"
+  },
+  "marca": {
+    "title": "marka osobista",
+    "p1": "Lubię kończyć projekty, które zaczynam; szybko uczę się nowych koncepcji i nie ma wyzwań, których nie potrafię pokonać.",
+    "p2": "Jestem osobą proaktywną, elastyczną, z motywacją wewnętrzną i chęcią do nauki nowych rzeczy.",
+    "p3": "Chciałbym pracować w programowaniu stron internetowych, aplikacji mobilnych i/lub gier wideo. Zainteresowany przekształcaniem pomysłów w rzeczywistość, nauką nowych języków programowania i stworzeniem gry w przyszłości."
+  },
+  "formacio": {
+    "title": "wykształcenie",
+    "item1": {
+      "name": "Licencjat z projektowania i rozwoju gier wideo",
+      "location": "Uniwersytet w Gironie"
+    },
+    "item2": {
+      "name": "Kurs programowania aplikacji mobilnych",
+      "location": "Fundacja Esplai"
+    },
+    "item3": {
+      "name": "Wyższy kurs zawodowy - Rozwój aplikacji multiplatformowych"
+    },
+    "item4": {
+      "name": "Wyższy kurs zawodowy - Rozwój aplikacji internetowych"
+    },
+    "item5": {
+      "name": "Wyższy kurs zawodowy - Administracja sieciowych systemów informatycznych"
+    },
+    "item6": {
+      "name": "Średni kurs zawodowy - Systemy mikroinformatyczne i sieci"
+    }
+  },
+  "experiencia": {
+    "title": "doświadczenie zawodowe",
+    "item1": {
+      "name": "Programista FullStack",
+      "desc": "Programowanie i modyfikacja stron internetowych, głównie przy użyciu technologii takich jak Angular, React i Experience Builder."
+    },
+    "item2": {
+      "name": "Programista aplikacji webowych / multiplatformowych",
+      "desc1": "Programowanie i modyfikacja stron internetowych przy użyciu technologii takich jak Angular + NodeJS.",
+      "desc2": "Tworzenie aplikacji mobilnych z React Native + NodeJS.",
+      "desc3": "Tworzenie aplikacji desktopowych z Java + JavaFX (praktyki)."
+    },
+    "item3": {
+      "name": "Obsługa informatyczna",
+      "desc": "Konserwacja sprzętu komputerowego, sprawdzanie aktualizacji systemu i aplikacji (praktyki)."
+    },
+    "other": {
+      "title": "Inne doświadczenia: ",
+      "desc": "operator malarski, zespół 5 młodych osób (4 lata), Rada Miasta Les Planes d'Hostoles."
+    }
+  },
+  "coneixements": {
+    "title": "umiejętności techniczne",
+    "title1": "Strony internetowe",
+    "title2": "Aplikacje desktopowe",
+    "title3": "Aplikacje mobilne",
+    "title4": "Bazy danych",
+    "title5": "Kontrola wersji",
+    "title6": "Dokumentacja i inne"
+  },
+  "languages": {
+    "title": "Języki",
+    "level_high": "wysoki poziom",
+    "level_mid": "poziom średni",
+    "level_native": "wysoki poziom (ojczysty)"
+  },
+  "altres": {
+    "title": "Inne",
+    "li1": "Gotowość do natychmiastowego podjęcia pracy, elastyczne godziny pracy",
+    "li2": "Uprawnienia A2, A1, B + własny pojazd."
+  },
+  "projects": {
+    "title": "projekty",
+    "project1": {
+      "title": "RestaSearch",
+      "p1": "Aplikacja mobilna i tabletowa (Android), która, wykorzystując aktualną lokalizację GPS oraz określony promień, pokazuje różne restauracje w okolicy.",
+      "subtitle": "Funkcjonalności",
+      "li1": "Mapa z różnymi restauracjami",
+      "li2": "Zapisz restaurację jako ulubioną",
+      "li3": "Historia odwiedzonych restauracji",
+      "li4": "Wielojęzyczność (Angielski, Hiszpański, Kataloński)"
+    },
+    "project2": {
+      "title": "Projekt hipermedialny",
+      "p1": "Aplikacja internetowa z drugiego roku GDDV (Projektowanie i Rozwój Gier)"
+    }
+  }
+}
