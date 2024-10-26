@@ -7,14 +7,15 @@ let language = '';
 
 /**
  * Translates the page given the language
- * @param {'en' | 'ca' | 'es' | 'pl'} lang
+ * @param {'en' | 'ca' | 'es' | 'pl'} lang the new language we want to apply
+ * @param {boolean} removeSelectedLang if `true` we remove the active class from the current selected language
  */
-function changeLanguage(lang, remove = true) {
+function changeLanguage(lang, removeSelectedLang = true) {
     // if the current language is the same as the lang from the parameter we don't do anythink
     if (language === lang) return;
 
     // deselect current active language option
-    if (remove) document.querySelector(`li[i18n="lang.${language}"]`)?.classList.remove('active');
+    if (removeSelectedLang) document.querySelector(`li[i18n="lang.${language}"]`)?.classList.remove('active');
 
     language = lang;
 
@@ -133,19 +134,18 @@ async function OnInit() {
 
     // we use the function to change the language
     changeLanguage(lang, false);
-
-    const github = document.querySelector('button#github');
-    github.onclick = () => {
-        window.open('https://github.com/xDemorn', '_blank');
-    }
-
 }
 
 /**
  * Opens a new window with the given `url`
  * @param {string} url the link you want to open
- * @param {string} target `_blank` for a new tab or '' for the current tab
  */
-function open(url, target) {
-    window.open(url, target);
+function newTab(url) {
+    const a = document.createElement('a');
+    a.href = url;
+    a.target = '_blank';
+
+    a.click();
+
+    a.remove();
 }
