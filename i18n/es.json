@@ -90,5 +90,7 @@
       "title": "Proyecto de Hipermedia",
       "p1": "Aplicación web del segundo curso de GDDV (Diseño y Desarrollo de Videojuegos)"
     }
-  }
+  },
+  "code": "Código",
+  "code_fork": "Código (bifurcación)"
 }

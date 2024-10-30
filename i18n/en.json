@@ -90,5 +90,7 @@
       "title": "Hypermedia Project",
       "p1": "Web application from the second year of GDDV (Game Design and Development)"
     }
-  }
+  },
+  "code": "Code",
+  "code_fork": "Code (fork)"
 }

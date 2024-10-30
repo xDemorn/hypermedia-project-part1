@@ -90,5 +90,7 @@
       "title": "Projecte d'Hipermèdia",
       "p1": "Aplicació web del segon curs de GDDV (Disseny i Desenvolupament de Videojocs)"
     }
-  }
+  },
+  "code": "Codi",
+  "code_fork": "Codi (bifurcació)"
 }

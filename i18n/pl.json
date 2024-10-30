@@ -90,5 +90,7 @@
       "title": "Projekt hipermedialny",
       "p1": "Aplikacja internetowa z drugiego roku GDDV (Projektowanie i Rozwój Gier)"
     }
-  }
+  },
+  "code": "Kod",
+  "code_fork": "Kod (fork)"
 }
