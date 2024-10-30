@@ -2,8 +2,10 @@
 
 :root {
   --header-background: #f9d9ab;
-  --header-border: 5px solid #f3cc5f;
+  --header-border-color: #f3cc5f;
+  --header-border: 5px solid var(--header-border-color);
   --link-color: #009dff;
+  --overflow: hidden;
 }
 
 * {
@@ -72,6 +74,38 @@ body {
   padding: 0;
   background: #c7c7c7;
   gap: 8px;
+  overflow: hidden;
+
+  &.overflow {
+    overflow: auto;
+  }
+
+  div#loading-container {
+    position: absolute;
+    background: #c7c7c7;
+    inset: 0;
+    z-index: 99999;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    &.fade-out {
+      animation: fadeout 1s;
+    }
+
+    &.hidden {
+      display: none;
+    }
+
+    .loader {
+      width: 50px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 8px solid var(--header-background);
+      border-right-color: var(--header-border-color);
+      animation: rotate 1s infinite linear forwards;
+    }
+  }
 
   aside.language-selector {
     position: fixed;
@@ -79,17 +113,22 @@ body {
     right: 0;
     height: auto;
     padding: 8px;
-    z-index: 99;
+    z-index: 2;
 
     ul {
       list-style-type: none;
       padding: 0;
+      margin: 0;
 
       li {
         position: relative;
         cursor: pointer;
         height: 16px;
         margin: 8px 0;
+
+        &:first-child {
+          margin: 0;
+        }
 
         &::before {
           content: attr(tooltip);
@@ -241,6 +280,34 @@ body {
               font-size: 12px;
             }
           }
+
+          div.actions {
+            display: flex;
+            padding: 8px;
+            gap: 8px;
+
+            & > button {
+              all: unset;
+              border-radius: 8px;
+              border: 1px solid gray;
+              display: inline-flex;
+              align-items: center;
+              padding: 8px;
+              //background: #e4e4e4;
+              gap: 4px;
+              cursor: pointer;
+
+              &:hover {
+                background: #e4e4e4;
+              }
+
+              & > img {
+                width: 16px;
+                height: auto;
+                aspect-ratio: 230 / 225;
+              }
+            }
+          }
         }
 
         div.card {
@@ -306,7 +373,7 @@ body {
 }
 
 span.chip {
-  //height: 20px;
+  min-height: 20px;
   border-radius: 8px;
   padding: 0 12px;
   text-align: center;
@@ -319,6 +386,31 @@ span.chip {
 
   &:hover {
     background: rgba(68, 71, 78, 0.08);
+  }
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
 

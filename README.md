@@ -21,6 +21,8 @@ On the third page there is just one section also displayed as a grid.
 
 ## Visual design
 
+I coded in `.scss` file, then compiled it to an `.css` file.
+
 There are 3 base colors.
 
 - #f9d9ab for the headers background.
@@ -43,6 +45,19 @@ This is a responsive web. If the `width <= 768px` then the row changes to be a c
 
 The [figma project](https://www.figma.com/design/Bs3KunIrHikFfCJzW0SIvZ/Untitled?node-id=4-2&t=JCm1QtU8CHR9rh9d-1) doesn't show a scrollbar, but in the preview mode it is possible to scroll.
 
->***NOTE***: It is possible to force a language adding at the end of the URL ?lang=ca, the possible values are 'ca' | 'es' | 'ca' | 'pl'.
+## JavaScript
+
+The JavaScript part is very simple, there are 2 main functionalities.
+
+- The links aren't actually an `<a></a>` tag, instead they are `<button></button>`. So to open a new link to a page, from the code it creates a new `<a></a>`, to that created tag sets the `href` attribute, then calls the `click()` function and finally ot removes the created tag.
+- There also is a language selector, in which every tag has an `i18n` attribute and when the user changes the languages it gets all elements that have that tag and changes to the selected language.
+
+## GitHub
+
+I worked with 2 branches, the default main and a new one that I called `develop`. The `main` branch is deployed to the github pages and the `develop` was used to do the main development of the project. Once I was satisfied with the development then I merged the `develop` branch to the `main`.
+
+[Live preview](https://xdemorn.github.io/hypermedia-project-part1/) of the project.
+
+>***NOTE***: It is possible to force a language by adding at the end of the URL `?lang=${lang}`, the possible values of `${lang}` are `'ca' | 'es' | 'ca' | 'pl'`.
 
 >***NOTE***: This project was developed in Catalan, but all the translations are made with ChatGPT, they might not be 100% accurate.

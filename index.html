@@ -12,6 +12,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     </head>
     <body onload="OnInit()">
+        <div id="loading-container">
+            <div class="loader"></div>
+        </div>
+
         <aside class="language-selector">
             <ul>
                 <li id="en" i18n="lang.en" tooltip onclick="changeLanguage('en')">
@@ -43,7 +47,7 @@
                     </span>
                 </div>
                 <div class="col">
-                    <img class="profile-img" src="https://imgs.search.brave.com/xFkz2rHVRFxHB3pOHKPh-9VUyP9DKszbVpTUzIP9HvM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1wcm9m/aWxlLXBpY3R1cmUt/ODdoNDZnY29iamw1/ZTR4dS5qcGc" alt="Profile Picture" />
+                    <img class="profile-img" src="images/profile-picture.jpeg" alt="Profile Picture" />
                 </div>
             </header>
 
@@ -344,6 +348,12 @@
                             <li i18n="projects.project1.li4"></li>
                         </ul>
                     </div>
+                    <div class="actions">
+                        <button class="action" onclick="newTab('https://github.com/xDemorn/ProjecteFinal')">
+                            <img src="images/github-dark.svg" alt="GitHub">
+                            Code (fork)
+                        </button>
+                    </div>
                 </div>
 
                 <div class="project">
@@ -355,6 +365,13 @@
                     </div>
                     <div class="content">
                         <p i18n="projects.project2.p1"></p>
+                    </div>
+
+                    <div class="actions">
+                        <button class="action" onclick="newTab('https://github.com/xDemorn/hypermedia-project-part1')">
+                            <img src="images/github-dark.svg" alt="GitHub">
+                            Code
+                        </button>
                     </div>
                 </div>
             </article>

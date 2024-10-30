@@ -134,6 +134,23 @@ async function OnInit() {
 
     // we use the function to change the language
     changeLanguage(lang, false);
+
+    // once everything loaded we can disable the loader element and show the main page
+    const loading = document.querySelector('div#loading-container');
+
+    if (loading) {
+        // we add a fade out animation
+        loading.classList.add('fade-out');
+
+        // setup a timeout after the animation is done and remove that class and add a hidden
+        // class to hide the loading container and finally we add the possibility to scroll
+        setTimeout(() => {
+            loading.classList.remove('fade-out');
+            loading.classList.add('hidden');
+
+            document.getElementsByTagName('body')[0].classList.add('overflow');
+        }, 1000);
+    }
 }
 
 /**

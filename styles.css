@@ -1,7 +1,9 @@
 :root {
   --header-background: #f9d9ab;
-  --header-border: 5px solid #f3cc5f;
+  --header-border-color: #f3cc5f;
+  --header-border: 5px solid var(--header-border-color);
   --link-color: #009dff;
+  --overflow: hidden;
 }
 
 * {
@@ -68,6 +70,33 @@ body {
   padding: 0;
   background: #c7c7c7;
   gap: 8px;
+  overflow: hidden;
+}
+body.overflow {
+  overflow: auto;
+}
+body div#loading-container {
+  position: absolute;
+  background: #c7c7c7;
+  inset: 0;
+  z-index: 99999;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+body div#loading-container.fade-out {
+  animation: fadeout 1s;
+}
+body div#loading-container.hidden {
+  display: none;
+}
+body div#loading-container .loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid var(--header-background);
+  border-right-color: var(--header-border-color);
+  animation: rotate 1s infinite linear forwards;
 }
 body aside.language-selector {
   position: fixed;
@@ -75,17 +104,21 @@ body aside.language-selector {
   right: 0;
   height: auto;
   padding: 8px;
-  z-index: 99;
+  z-index: 2;
 }
 body aside.language-selector ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 body aside.language-selector ul li {
   position: relative;
   cursor: pointer;
   height: 16px;
   margin: 8px 0;
+}
+body aside.language-selector ul li:first-child {
+  margin: 0;
 }
 body aside.language-selector ul li::before {
   content: attr(tooltip);
@@ -213,6 +246,29 @@ body main section article div.project div.content p.subtitle {
   margin: 4px 0;
   font-size: 12px;
 }
+body main section article div.project div.actions {
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+}
+body main section article div.project div.actions > button {
+  all: unset;
+  border-radius: 8px;
+  border: 1px solid gray;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px;
+  gap: 4px;
+  cursor: pointer;
+}
+body main section article div.project div.actions > button:hover {
+  background: #e4e4e4;
+}
+body main section article div.project div.actions > button > img {
+  width: 16px;
+  height: auto;
+  aspect-ratio: 230/225;
+}
 body main section article div.card {
   display: flex;
   flex-direction: column;
@@ -261,6 +317,7 @@ body main section article div.lang {
 }
 
 span.chip {
+  min-height: 20px;
   border-radius: 8px;
   padding: 0 12px;
   text-align: center;
@@ -275,6 +332,27 @@ span.chip:hover {
   background: rgba(68, 71, 78, 0.08);
 }
 
+.action {
+  display: flex;
+  flex-direction: row;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @media (width <= 1440px) {
   body main {
     max-width: 50%;
